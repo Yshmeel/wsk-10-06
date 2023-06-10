@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easing Simulator</title>
+    <link href="css/core.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="header__right">
+                <button class="btn btn-default show-on-desktop toggle-about">
+                    About
+                </button>
+
+                <button class="btn btn-default btn-icon show-on-mobile toggle-about">
+                    i
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="easings-list">
+            <header>
+                <h3>All easings</h3>
+            </header>
+
+            <form class="easings-list-items"></form>
+        </section>
+
+        <section class="easings-simulation">
+            <div class="easings-simulation__chart">
+                <div class="chart-overlay">
+                    <span class="chart-overlay-top">1</span>
+                    <span class="chart-overlay-bottom">0</span>
+                </div>
+                <canvas id="chart-canvas"></canvas>
+            </div>
+
+            <div class="easing-simulation__block">
+                <div class="easing-simulation__block--slider">
+                    <div class="range">
+                        <input type="range" value="0" min="0" max="100" id="easing-slider">
+                        <span>0</span>
+                    </div>
+                </div>
+    
+                <div class="easing-simulation__block--button">
+                    <button type="button" class="btn btn-default">
+                        Play
+                    </button>
+                </div>
+            </div>
+
+       
+        </section>
+    </main>
+
+    <div class="back-to-top">
+        <span>^</span>
+    </div>
+
+    <div class="about-overlay" aria-modal="true">
+        <div class="about-overlay__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nam nec elit quis sem viverra efficitur. Ut posuere ultrices metus 
+            non interdum. Morbi dictum bibendum nibh a varius. Sed cursus, 
+            velit eget faucibus pharetra, nulla lectus euismod enim, at euismod 
+            lectus nulla non neque. Donec commodo eget odio nec dignissim. Sed eu 
+            mi in purus vestibulum efficitur. Ut mattis, tortor at luctus convallis,
+            lacus nibh lacinia mauris, sed fermentum nulla ligula pretium justo. 
+            Nulla vitae lectus mattis, luctus metus scelerisque, interdum magna. 
+            Suspendisse enim eros, vehicula vitae placerat bibendum, iaculis sed
+            augue. Etiam ligula mauris, consequat ut orci vel, malesuada dignissim
+            sapien. Duis placerat purus rhoncus, tincidunt est eget, 
+            commodo odio. Sed leo leo, vestibulum at erat at, varius cursus leo.
+                Integer iaculis ante nec dignissim gravida. 
+        </div>
+    </div>
+
+    <script src="js/easings.js"></script>
+    <script src="js/core.js"></script>
+</body>
+</html>
